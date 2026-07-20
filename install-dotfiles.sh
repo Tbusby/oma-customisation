@@ -27,10 +27,12 @@ if [ $? -eq 0 ]; then
   echo "removing old configs"
   rm -rf ~/.config/starship.toml
   rm -rf ~/.config/hypr/hypridle.conf
+  rm -rf ~/.config/walker/config.toml
 
   cd "$REPO_NAME"
   stow -t ~ starship
   stow -t ~ hyprland
+  stow -t ~ walker
 else
   echo "Failed to clone the repository."
   exit 1
