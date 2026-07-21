@@ -9,3 +9,6 @@
 . ./install-dotfiles.sh
 . ./install-hypr-customisations.sh
 . ./install-webapps.sh
+. ./install-kitty.sh
+. ./install-yazi.sh
+. ./install-thunderbird.sh 

@@ -28,11 +28,14 @@ if [ $? -eq 0 ]; then
   rm -rf ~/.config/starship.toml
   rm -rf ~/.config/hypr/hypridle.conf
   rm -rf ~/.config/walker/config.toml
+  rm -rf ~/.config/xdg-terminals.list
+  rm -rf ~/.config/kitty/*
 
   cd "$REPO_NAME"
   stow -t ~ starship
   stow -t ~ hyprland
   stow -t ~ walker
+  stow -t ~ kitty
 else
   echo "Failed to clone the repository."
   exit 1
