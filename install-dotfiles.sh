@@ -29,13 +29,23 @@ if [ $? -eq 0 ]; then
   rm -rf ~/.config/hypr/hypridle.conf
   rm -rf ~/.config/walker/config.toml
   rm -rf ~/.config/xdg-terminals.list
-  rm -rf ~/.config/kitty/*
+  rm -rf ~/.config/kitty/current-theme.conf
+  rm -rf ~/.config/kitty/kitty.conf
+  rm -rf ~/.config/xdg-terminals.list
+  rm -rf ~/.config/zsh/aliases.zsh
+  rm -rf ~/.config/zsh/bindings.zsh
+  rm -rf ~/.config/zsh/fzf.zsh
+  rm -rf ~/.config/zsh/plugins.zsh
+  rm -rf ~/.config/zsh/prompt.zsh
+  rm -rf ~/.config/zsh/.zshrc
+  rm -rf ~/.config/zsh/.zshenv
 
   cd "$REPO_NAME"
   stow -t ~ starship
   stow -t ~ hyprland
   stow -t ~ walker
   stow -t ~ kitty
+  stow -t ~ zsh
 else
   echo "Failed to clone the repository."
   exit 1
