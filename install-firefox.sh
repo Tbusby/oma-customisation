@@ -3,4 +3,4 @@
 
 yay -S --noconfirm --needed firefox
 
-xdg-settings set default-web-browser zen.desktop
+xdg-settings set default-web-browser firefox.desktop
