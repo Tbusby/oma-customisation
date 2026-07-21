@@ -8,6 +8,7 @@
 . ./install-stow.sh
 . ./install-dotfiles.sh
 . ./install-hypr-customisations.sh
+. ./install-zsh.sh
 . ./install-kitty.sh
 . ./install-firefox.sh
 . ./install-thunderbird.sh 

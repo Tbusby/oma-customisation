@@ -5,9 +5,9 @@ yay -S --noconfirm --needed zsh
 chsh -s $(which zsh)
 
 # ensure dirs exist
-mkdir ~/.config/zsh
-mkdir ~/.local/state/zsh
-mkdir ~/.cache/zsh 
+mkdir -p ~/.config/zsh
+mkdir -p ~/.local/state/zsh
+mkdir -p ~/.cache/zsh 
 
 # copy zshenv to /etc/zsh tells zsh where to find configs locally
 echo "Supdo pass to copy zshenv to /etc/zsh"
