@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Configure Omarchy after a fresh install
 
-
+omarchy-theme-set tokyo-night
 
 # Install all custom packages
 . ./install-shellhelpers.sh

@@ -17,6 +17,15 @@ After a fresh install of Omarchy apply my customisations to set it up how I like
     Login to Firefox profile
 - Setup Thunderbird 
     Login to gmail 
+- Setup Obsidian
+    Login to Obsidian Sync
+    Input pass to unencrypt notes 
+    Settings > Sync > Activate Community Plugins && Sync Community Plugins
+    Settings > Plugins > Enable Community Plugins 
+    Settings > Plugins > Sync Plugins 
+    Settings > Plugins > Update Plugins 
+    Move Calendar to left bar 
+
 
 
 
