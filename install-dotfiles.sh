@@ -41,7 +41,6 @@ if [ $? -eq 0 ]; then
   rm -rf ~/.config/zsh/.zshenv
 
   cd "$REPO_NAME"
-  stow -t ~ starship
   stow -t ~ hyprland
   stow -t ~ walker
   stow -t ~ kitty
