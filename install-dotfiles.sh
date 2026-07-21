@@ -39,12 +39,15 @@ if [ $? -eq 0 ]; then
   rm -rf ~/.config/zsh/prompt.zsh
   rm -rf ~/.config/zsh/.zshrc
   rm -rf ~/.config/zsh/.zshenv
+  rm -rf ~/.config/waybar/config.jsonc
+  rm -rf ~/.config/waybar/style.css
 
   cd "$REPO_NAME"
   stow -t ~ hyprland
   stow -t ~ walker
   stow -t ~ kitty
   stow -t ~ zsh
+  stow -t ~ waybar
 else
   echo "Failed to clone the repository."
   exit 1
