@@ -4,6 +4,7 @@
 omarchy-theme-set tokyo-night
 
 # Install all custom packages
+yay -Sc
 . ./install-shellhelpers.sh
 . ./install-stow.sh
 . ./install-dotfiles.sh
@@ -12,3 +13,4 @@ omarchy-theme-set tokyo-night
 . ./install-kitty.sh
 . ./install-firefox.sh
 . ./install-thunderbird.sh 
+. ./install-restic.sh

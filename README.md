@@ -25,7 +25,12 @@ After a fresh install of Omarchy apply my customisations to set it up how I like
     Settings > Plugins > Sync Plugins 
     Settings > Plugins > Update Plugins 
     Move Calendar to left bar 
-
-
+- Setup Restic
+    Restic is installed but nothing configured 
+    Possible setup:
+      - Mount NFS
+      - Initalise restic on NFS
+      - Run an initial backup to test 
+      - Schedule backup using cron 
 
 
