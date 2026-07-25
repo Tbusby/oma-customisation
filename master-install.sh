@@ -14,3 +14,4 @@ yay -Sc
 . ./install-firefox.sh
 . ./install-thunderbird.sh 
 . ./install-restic.sh
+. ./install-nvim.sh

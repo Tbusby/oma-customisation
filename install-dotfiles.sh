@@ -42,6 +42,9 @@ if [ $? -eq 0 ]; then
   rm -rf ~/.config/waybar/config.jsonc
   rm -rf ~/.config/waybar/style.css
   rm -rf ~/.config/yay/config.json
+  rm -rf ~/.config/nvim
+  rm -rf ~/.local/state/nvim
+  rm -rf ~/.cache/nvim
 
   cd "$REPO_NAME"
   stow -t ~ hyprland
@@ -50,6 +53,7 @@ if [ $? -eq 0 ]; then
   stow -t ~ zsh
   stow -t ~ waybar
   stow -t ~ yay
+  stow -t ~ nvim
 else
   echo "Failed to clone the repository."
   exit 1
