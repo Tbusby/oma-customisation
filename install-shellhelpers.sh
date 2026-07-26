@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 # Install shell helpers
 
-yay -S --noconfirm --needed yazi zoxide fzf bat eza ripgrep fd starship
+yay -S --noconfirm --needed \
+  yazi \
+  zoxide \
+  fzf \
+  bat \
+  eza \
+  ripgrep \
+  fd \
+  oh-my-posh 
 
