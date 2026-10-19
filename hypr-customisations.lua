@@ -18,6 +18,19 @@ hl.unbind("SUPER + SHIFT + E")
 o.bind("SUPER + SHIFT + E", "Email", "omarchy-launch-or-focus thunderbird")
 hl.unbind("SUPER + SHIFT + ALT + M")
 o.bind("SUPER + SHIFT + ALT + M", "Terminal", terminal .. " -o font_size=9 cliamp")
+hl.unbind("SUPER + SHIFT + C")
+o.bind("SUPER + SHIFT + C", "Claude", "claude-desktop --ozone-platform=wayland")
+-- Autostart apps on set workspaces (rules apply to these launches only, not later opens)
+local function launch_on_workspace(command, workspace)
+  hl.on("hyprland.start", function()
+    hl.exec_cmd(o.launch(command), { workspace = workspace .. " silent" })
+  end)
+end
+
+launch_on_workspace(browser, 1)
+launch_on_workspace("claude-desktop --ozone-platform=wayland", 1)
+launch_on_workspace("thunderbird", 2)
+launch_on_workspace("obsidian", 2)
 
 -- Make Nautilus a floating window and set a good default size
 o.window({ class = "^(org%.gnome%.Nautilus)$" }, { float = true, persistent_size = true })
